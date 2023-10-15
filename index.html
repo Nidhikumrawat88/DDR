@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DDR</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Daily Run Rate</h1>
+  <form>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required><br>
+    
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" required><br>
+    
+    <label for="excludedDates">Dates Excluded (comma-separated):</label>
+    <input type="text" id="excludedDates"><br>
+    
+    <label for="leadCount">Lead Count:</label>
+    <input type="number" id="leadCount" required><br>
+    
+    <button type="button" onclick="calculateDRR()">Calculate</button>
+  </form>
+  
+  <div id="result">
+    <!-- Result will be displayed here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
